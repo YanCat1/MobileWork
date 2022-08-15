@@ -18,6 +18,7 @@ month = document.querySelector('.month')
 
 flag = false
 flag1 = false
+// 新员工点击效果
 newP.onclick=function(){
     flag = !flag
     if(flag){
@@ -31,42 +32,33 @@ newP.onclick=function(){
         icon.className ='iconfont icon-xiangzuo'
     }
 }
-Tcheng.onclick=function(){
-    showData.src = './童程新员工入职需知.pdf'
-}
-Tchuang.onclick=function(){
-    showData.src = './童创新员工入职需知.pdf'
-}
+// Tcheng.onclick=function(){
+//     showData.src = './童程新员工入职需知.pdf'
+// }
+// Tchuang.onclick=function(){
+//     showData.src = './童创新员工入职需知.pdf'
+// }
 
+// 进行体验课点击效果
 experience.onclick=function(){
     flag1 = !flag1
     if(flag1){
         experienceI.className = 'experienceI iconfont icon-arrow_right_fat '
-        course.style.display = 'block'
+        course.style.display='block'
         category.style.display = 'none'
         icon.className ='iconfont icon-xiangzuo'
         flag = false
     }else{
+        course.style.display='none'
         experienceI.className = 'experienceI iconfont icon-arrow_left_fat'
-        course.style.display = 'none'
     }
 }
-// 课程点击
-// function Click(ele,name){
-//     ele.onclick=function(){
-//         showData.src = "//player.bilibili.com/player.html?aid=644200934&bvid=BV1SY4y1w7H3&cid=794246857&page=1&high_quality=1&danmaku=0&as_wide=1"
-//         course.style.display = 'none'
-//         experienceI.className = 'experienceI iconfont icon-arrow_left_fat'
-//         flag1 = false
-    
-//     }
-// }
+
 python.onclick=function(){
     showData.src = "//player.bilibili.com/player.html?aid=644200934&bvid=BV1SY4y1w7H3&cid=794246857&page=1&high_quality=1&danmaku=0&as_wide=1"
     course.style.display = 'none'
     experienceI.className = 'experienceI iconfont icon-arrow_left_fat'
     flag1 = false
-
 }
 
 wedo.onclick=function(){

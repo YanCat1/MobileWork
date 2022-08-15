@@ -1,6 +1,6 @@
 @media (min-width:375px) and (max-width:667px){
     html{
-        font-size:8px;
+        font-size:15px;
     }
 }
 @media (min-width:668px) and (max-width:1800px){
@@ -16,7 +16,7 @@
 body{
     /* 禁止用户双击选中文字 */
     user-select: none;
-    background-color: black;
+    /* background-color: black; */
 }
 
 li{
@@ -35,136 +35,76 @@ li{
 .flex1{
     flex:1;
 }
-.right-bar h1{
-    font-size:1.4rem;
-}
 
 .column{
     flex-direction: column;
 }
+.cen{
+    margin:0 auto;
+}
 /* 外box样式 */
 #box{
-    height:100vh;
-    overflow: auto;
-}
-/* 左侧nav导航栏 */
-.left{
-    width:8rem;
-}
-
-.left .left-nav{
-    height: 55rem;
-}
-.left .left-nav li{
+    height:138vh;
+    border:1px solid red;
+    background:black;
     color:#fff;
-    height:3.0rem;
-    text-align: center;
-    margin:1.3rem 0px;
-    border:0.3rem solid #fff;
-    line-height:2.5rem;
-    font-weight:bold;
-    border-radius:0.5rem;
+}
+#box img{
+    width:14rem;
 }
 
-.left .left-nav li:first-child{
-    margin-top:10rem;
-}
-.left-nav img{
-    width:98%;
+/* 上方内容 */
+.top{
+    height: 6.5rem;
+    border: black;
+    background: black;
+    text-align:center;
 }
 
-/* 新入职员工 */
-.new:hover{
-    cursor: pointer;
+/* 下方内容 */
+.bottom{
+    width:11rem;
+    border:1px solid black;
+    text-align:center;
+}
+
+.bottom li{
+    height: 3rem;
+    border: 3px solid #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 3rem;
+    margin-top:1.25rem;
 }
 .category{
-    width: 20rem;
-    height: 10rem;
-    color: black;
-    text-align: center;
-    margin-top: -2.3rem;
-    display: none;
+    width:11rem;
+    margin:0 auto;
 }
 .category div{
-    height:4.6rem;
-    line-height:4.6rem;
+    width: 8rem;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    margin-top: 10px;
+    background:#fff;
+    color:#000;
     font-weight:bold;
-    border-radius:0.5rem;
-    border:0.3rem solid #000;
-    background: white;
+    display:none;
 }
 
-.category div:last-child{
-    margin-top:0.8rem;
-}
-.icon-sanjiao1{
-    margin-left: 1rem;
+/* 体验课内容 */
+.bottom .course{
+    display:none;
 }
 
-/* 周待办 */
-.left-nav .weeks{
-    cursor: pointer;
-    transition: 0.3s;
-}
-.left-nav .weeks:hover{
-    background-color: #fff;
-    color:black !important;
+.bottom .course div{
+    height: 3rem;
+    width:8rem;
+    border: 3px solid #fff;
     font-weight: bold;
-}
-
-/* 月代办 */
-.left-nav .month{
-    cursor: pointer;
-    transition: 0.3s;
-}
-.left-nav .month:hover{
-    background-color: #fff;
-    color:black !important;
-    font-weight: bold;
-}
-
-/* 体验课 */
-.experience{
-    position: relative;
-}
-.experience:hover{
-    cursor: pointer;
-}
-.course{
-    position: absolute;
-    top: 37.3rem;
-    left: 21rem;
-    display: none;
-}
-
-.course div{
-    text-align: center;
-    width: 10.6rem;
-    height: 3.4rem;
-    line-height: 2.6rem;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    border: 0.3rem solid #000;
-    background: white;
-    margin-top: 7px;
-}
-
-
-
-
-/* 右侧内容 */
-.right .right-bar{
-    height:7.5rem;
-    color:white;
-    text-align: center;
-    line-height:7rem;
-}
-.right-content{
-    /* padding:10px 30px; */
-    color:white;
-    overflow: auto;
-   
-}
-.right-content::-webkit-scrollbar{
-    display: none;
+    border-radius: 10px;
+    line-height: 3rem;
+    margin-top:1.25rem;
+    background:#fff;
+    color:#000;
+    font-weight:bold;
 }
