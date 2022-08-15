@@ -49,7 +49,6 @@ a{
 /* 外box样式 */
 #box{
     height:130vh;
-    border:1px solid red;
     background:black;
     color:#fff;
 }
